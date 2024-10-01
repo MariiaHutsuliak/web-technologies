@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px; 
+    border-radius: 50%;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.menu a {
+    text-decoration: none;
+    color: purple;
+    padding: 10px 10px;
+    background: rgb(255, 118, 68);
+    font-weight: bold;
+}
+div {
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.block {
+    width: 330px;  
+    padding: 10px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.block1 {
+    border: 5px solid rgba(0, 255, 110, 0.818);
+    border-radius: 35px;
+}
+.block2 {
+    border: 5px solid rgba(0, 255, 110, 0.818);
+    border-radius: 100px 0px;
+}
+.block3 {
+    border: 5px solid rgba(0, 255, 110, 0.818);
+    border-radius: 50px 150px;
+}
+.block4 {
+    border: solid 20px;
+    border-color: green greenyellow green greenyellow;
+    border-radius: 50% / 10% 10% 10% 10%;
+}
+.block5 {
+    border: solid 20px;
+    border-color: greenyellow green greenyellow green;
+    border-radius: 300px 100px / 60px 30px;
+    
+}
+.block6 {
+    border: solid 20px;
+    border-color: greenyellow greenyellow greenyellow green;
+    border-bottom-right-radius: 100%;
+}
+.block7 {
+    border: double #ffbd67 15px;
+    border-image: url("/2/img/border.png") 18 18 18 18;
+}
+.block8 {
+    border: double #ffbd67 15px;
+    border-image: url("/2/img/border.png") 15 / 15px round;
+}
+.block9 {
+    border: double #ffbd67 15px;
+    border-image: url("/2/img/border.png") 27 / 15px round;
+}
+.block10 {
+    border: double #ffbd67 15px;
+    border-image: url("/2/img/border3.png") 20 10 / 20px stretch;
+}
+.block11 {
+    border: double #ffbd67 15px;
+    border-image: url("/2/img/border3.png") 9 25 / 20px round;
+}
+.block12 {
+    border: double #ffbd67 15px;
+    border-image: url("/2/img/border3.png") 5 17 / 20px stretch;
+}
