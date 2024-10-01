@@ -1,0 +1,149 @@
+div {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+    font: 1em sans-serif;
+    margin: 0 auto;
+    position: relative;
+}
+div::before {
+    content: '';
+    position: absolute;
+    top: 54%; /* Розташовує лінію посередині по вертикалі */
+    left: 0; 
+    right: 0;
+    height: 10px; 
+    background-color: rgb(255, 165, 0); 
+    transform: translateY(-50%); /* Вирівнює лінію точно по центру по вертикалі */
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+ul.level-1 {
+    list-style-type: none;
+    background-color: rgb(103, 158, 128);
+    padding-left: 50px;
+    padding-right: 20px;
+    background-image: url(icons/rule.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: auto;
+}
+
+ul.level-1 li {
+    margin-bottom: 10px;
+}
+
+.level-1-item {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+}
+
+ul.level-2 {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+ul.level-2 li span {
+    font-size: 18px;
+    font-style: italic;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+/* Елемент span для списку 2-го рівня */
+.level-2-item {
+    background-color: rgb(218, 106, 32); 
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative; 
+    z-index: 1; /* перед зеленою лінією */
+}
+
+ul.level-2 li {
+    margin-bottom: 10px;
+    position: relative; 
+    padding-left: 40px; 
+}
+
+ul.level-2 li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+ul.level-2 li::after {
+    content: '';
+    position: absolute;
+    top: 0%; 
+    left: 0;
+    right: 0; 
+    height: 40px; 
+    background-color: rgb(153, 180, 102);
+    z-index: 0;
+}
+
+.route::before {
+    background-image: url('icons/ad_units.png');
+}
+
+.ticket::before {
+    background-image: url('icons/airplane_ticket.png');
+}
+
+.hotel::before {
+    background-image: url('icons/hotel.png');
+}
+
+.car::before {
+    background-image: url('icons/car_rental.png');
+}
+
+.bar::before {
+    background-image: url('icons/local_bar.png');
+}
+
+.casino::before {
+    background-image: url('icons/casino.png');
+}
+
+.museum::before {
+    background-image: url('icons/museum.png');
+}
+
+.festival::before {
+    background-image: url('icons/festival.png');
+}   
+
+.rule {
+    position: relative; 
+}
+
+.rule::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 0; /*в лівому верхньому куті */
+    width: 50px;
+    height: 50px; 
+    background-image: url('icons/rule.png');
+    background-repeat: no-repeat;
+    background-size: contain; /* Адаптація зображення до розміру */
+}

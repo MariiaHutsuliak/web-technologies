@@ -1,0 +1,57 @@
+/* загальні стилі для таблиці */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto; 
+}
+
+/* стилі для заголовків таблиці */
+thead th {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+thead th:nth-child(1) {
+    background-color: #f4dddd; 
+}
+
+thead th:nth-child(2) {
+    background-color: #e3b2b2; 
+}
+
+thead th:nth-child(3) {
+    background-color: #d99594; 
+}
+
+thead th:nth-child(4) {
+    background-color: #943634; 
+}
+
+thead th:nth-child(5) {
+    background-color: #642423; 
+}
+
+/* стилі для клітинок тіла таблиці */
+tbody td {
+    padding: 15px;
+    text-align: center;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+tbody td:first-child {
+    background-color: #bf504e !important; 
+    color: white;
+    text-align: left;
+}
+
+
+tbody tr:nth-child(odd) td {
+    background-color: #e5b7b7;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f3dbdb; 
+}
