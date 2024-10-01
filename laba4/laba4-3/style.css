@@ -1,0 +1,43 @@
+a {
+    color: purple;
+}
+
+
+.main-menu {
+    color: green;
+}
+
+
+.square-list {
+    list-style-type: square;
+}
+
+.icon-list {
+    list-style-type: none;
+}
+.icon-list li {
+    position: relative;
+    padding-left: 20px;
+}
+.icon-list li::before {
+    content: '✔'; 
+    position: absolute;
+    left: 0;
+    color: gray;
+}
+
+
+ul ul {
+    list-style-type: none;
+}
+
+
+.square-list a.no-underline {
+    text-decoration: none;
+}
+
+
+ul li ol {
+    padding-left: 10px;  
+}
+
