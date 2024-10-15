@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+}
+
+.weather-app {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.location {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.location h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.location p {
+    font-size: 14px;
+    color: gray;
+}
+
+.current-weather {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.current-weather .temp {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.current-weather .icon.cloudy-big {
+    width: 80px;
+    height: 80px;
+    background-image: url('img1/iconfinder_weather04.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.current-weather .details {
+    color: #737373;
+    font-size: 13px;
+    text-align: left; 
+    line-height: 1.6; 
+    margin-left: 0px;
+}
+
+.current-weather .details p {
+    margin-left: 40px;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 2px solid #d2d2d2;;
+}
+
+.weekday {
+    width: 80px; /* Вирівнюємо дні тижня */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lighting {
+    background-image: url('/img1/iconfinder_weather08.png');
+}
+.cloudy {
+    background-image: url('img1/iconfinder_weather04.png');
+}
+
+.sunny {
+    background-image: url('img1/iconfinder_weather01.png');
+}
+
+.cloudy-sun {
+    background-image: url('img1/iconfinder_weather02.png');
+}
+
+.rainy {
+    background-image: url('img1/iconfinder_weather06.png');
+}
+
+.partly-sunny {
+    background-image: url('img1/iconfinder_weather02.png');
+}
+
+.temp-range {
+    display: flex;
+    flex-direction: column; /* Температури в стопчик */
+    align-items: center;
+}
+
+.high-temp {
+    font-size: 15px;
+    color: #000000;
+}
+
+.low-temp {
+    font-size: 13px;
+    color: rgb(126, 126, 126);
+}
+
+.pollen-count {
+    font-size: 14px;
+    color: gray;
+    text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+    .weather-app {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .current-weather .temp {
+        font-size: 20px;
+    }
+}
