@@ -1,0 +1,61 @@
+.block {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    border: solid black;
+}
+
+.wrapper {
+    position: absolute;
+}
+
+.block1 {
+    background-color: green;
+    position: relative;
+    color: #000;
+}
+
+.block2 {
+    background-color: rgb(87, 87, 255);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 160px; 
+}
+
+.block3 {
+    background-color: rgb(55, 26, 82);
+    color: white;
+    width: 310px;
+    height: 170px;
+    text-align: center;
+    line-height: 100px;
+    display: none;
+    position: absolute;
+    top: 60px; 
+}
+
+.block1:hover + .block2 {
+    display: block;
+}
+
+.block2:hover + .block3 {
+    display: block;
+}
+
+.wrapper:hover .block2 {
+    display: block;
+}
+
+.wrapper:hover .block2:hover + .block3 {
+    display: block;
+}
+
+.wrapper:hover .block2:hover {
+    display: block;
+}

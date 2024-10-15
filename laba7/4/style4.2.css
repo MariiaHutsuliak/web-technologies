@@ -1,0 +1,110 @@
+/* Основний контейнер навігаційної панелі */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    background-color: #0066cc;
+    padding-top: 20px;
+    overflow-y: auto; /* Додаємо можливість прокручування якщо вкладень забагато */
+    max-height: 100vh; /* Максимальна висота для фіксованої панелі */
+}
+
+/* Список навігаційного меню */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Загальний стиль для посилань у меню */
+.navbar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Іконки для пунктів меню */
+.navbar ul li a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Стиль активного пункту меню */
+.navbar ul li a.active {
+    background-color: #003366;
+    font-weight: bold;
+}
+
+/* Підменю для другого рівня */
+.navbar ul li ul.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+    background-color: #004a99;
+}
+
+/* Відображення підменю при наведенні */
+.navbar ul li:hover > ul.submenu {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Підменю для третього рівня */
+.navbar ul li ul.submenu li ul.submenu {
+    display: none;
+    padding-left: 20px;
+    background-color: #003366;
+}
+
+.navbar ul li ul.submenu li:hover > ul.submenu {
+    display: block;
+}
+
+/* Вирівнювання останнього пункту меню до правого краю */
+.last-item {
+    margin-top: auto;
+}
+
+/* Стиль для липкої навігаційної панелі */
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+/* Зменшення розміру шрифтів для підменю */
+.navbar ul li ul.submenu li a {
+    font-size: 16px;
+}
+
+/* Третій рівень підменю */
+.navbar ul li ul.submenu li ul.submenu li a {
+    font-size: 14px;
+    padding-left: 30px; /* Додатковий відступ для третього рівня */
+}
+
+/* Загальна висота для кожного рівня меню */
+.navbar ul li ul.submenu li, .navbar ul li ul.submenu li ul.submenu li {
+    padding: 5px 0;
+}
+
+/* Зміна кольору при наведенні на елемент підменю */
+.navbar ul li a:hover {
+    background-color: #ff6600; /* Помаранчевий колір при наведенні */
+}
+
+/* Зміна кольору для елементів підменю при наведенні */
+.navbar ul li ul.submenu li a:hover {
+    background-color: #ff8533; /* Світліший помаранчевий для підменю */
+}
+
+/* Зміна кольору для елементів третього рівня підменю при наведенні */
+.navbar ul li ul.submenu li ul.submenu li a:hover {
+    background-color: #fcb18c; /* Ще світліший помаранчевий для третього рівня */
+}
